@@ -1,7 +1,7 @@
 ## Bentoml로 YOLOv8의 Docker Image 만들기 및 실행 가이드
 
 (1) f:\temp\venv 위치에 아래 명령으로 가상환경 만듬  
-python -m venv bento_yolo310
+python -m venv bento_yolo310  
 (2) 가상환경 들어가서 lib설치. f:\temp\BentoYolo의 requirements.txt 참조  
 pip install jupyter  
 pip install -r requrements.txt  
