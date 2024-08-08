@@ -21,9 +21,10 @@ docker run --rm -p 3000:3000 yolo_v8:tmkoy52vgocyxqb4
 - 들어가 보면 apis, env, models, src등의 폴더가 있음.  
 - src에 들어가보면 bentofile.yaml, service.py, yolov8x.pt파일이 들어 있음.   
 - 외부 disk의 폴더로 연결하여 이를 해결함.   
-  - 경로를 보면, /home/bentoml/bento/src
-  - f:\temp\aaa폴더를 만들어 이 경로와 연결
-  - aaa폴더 밑에 service.py, bentofile.yaml을 복사해 놓음  
+  - 경로를 보면, /home/bentoml/bento/src  
+  - f:\temp\aaa폴더를 만들어 이 경로와 연결  
+  - aaa폴더 밑에 service.py, bentofile.yaml을 복사해 놓음
+  
 (9) docker container를 다시 실행  
 docker run --rm -p 3000:3000 -v f:\temp\aaa:/home/bentoml/bento/src yolo_v8:tmkoy52vgocyxqb4  
 
