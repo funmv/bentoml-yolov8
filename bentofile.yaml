@@ -1,0 +1,16 @@
+service: "service:YoloV8"
+labels:
+  owner: bentoml-team
+  stage: demo
+include:
+ - "service.py"
+ - "yolo8x.pt"
+python:
+  requirements_txt: "./requirements.txt"
+docker:
+  system_packages:
+    - ffmpeg
+    - libglib2.0-0
+    - libsm6
+    - libxext6
+    - libxrender1
